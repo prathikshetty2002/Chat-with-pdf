@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send Message Response</title>
+    <title>Send Message</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,13 +22,6 @@
         h1 {
             text-align: center;
             margin-bottom: 30px;
-        }
-        .response {
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
         }
         .form-container {
             text-align: center;
@@ -59,10 +52,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Message Response</h1>
-        <div class="response">
-            <p>{{ response_text }}</p>
-        </div>
+        <h1>Send Message</h1>
         <div class="form-container">
             <form class="message-form" method="post" action="/send-message">
                 <input type="text" name="user_message" class="message-input" placeholder="Type your message here..." required>
